@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HIMEDIA-TRAVEL</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
+  <script src="js/jquery.bxslider.js" charset="utf-8"></script>
+  <script src="https://kit.fontawesome.com/d20b72f2ef.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <style>
+
+  .bx-wrapper {
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border: 0 none;
+      background: #fff;
+  }
+
+</style>
+  <script>
+    $(document).ready(function(){
+      $(".slider").bxSlider({
+        auto:true,
+        pager:false,
+        controls:false
+
+      });
+    });
+  </script>
+</head>
+<body>
+  <header id="headerWrap"> <!-- 100% -->
+    <div class="header">
+        <div class="utilmenu"> <!-- 980px -->
+          <h1 class="log">
+            <a href="index.html"><img src="images/logo.png" alt="홈"></a>
+          </h1>
+
+          <div class="searchWrap">
+            <form action="#">
+              <legend>검색</legend>
+              <label for="search">SEARCH</label>
+              <input type="text" id="search" name="search"
+              placeholder="검색어를 입력하세요." class="inp-field">
+              <span class="icon search">search</span>
+            </form>
+          </div> <!-- end:searchWrap -->
+          <div class="contact clearfix">
+            <div class="call">+82 02 1234 5678</div>
+            <div class="sns">
+              <a href="http://facebook.com">
+                  <img src="images/sns_fa.png" alt="페이스북"></a>
+              <a href="https://twitter.com/">
+                  <img src="images/sns_tw.png" alt="트위터"></a>
+              <a href="https://blog.naver.com/">
+                  <img src="images/sns_b.png" alt="블로그"></a>
+              <a href="https://www.instagram.com/">
+                  <img src="images/sns_in.png" alt="인스타그램"></a>
+            </div>
+          </div>
+        </div> <!-- end:utilmenu -->
+
+    <Wrap/div> <!-- end:header -->
+    <div class="gnbWrap">
+      <ul class="gnb clearfix"> <!-- 980px -->
+        <li><a href="#">여행도시</a></li>
+        <li><a href="#">호텔예약</a></li>
+        <li><a href="#">렌트카</a></li>
+        <li><a href="#">여행TIP</a></li>
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">커뮤니티</a></li>
+      </ul>
+    </div>  <!-- end:gnb -->
+  </header>
+
+  <!-- 메인화면 -->
+  <div id="contentWrap">
+    <div class="main_pack clearfix"> <!-- 배경 풍선그림 삽입부분 -->
+      <img src="images/ballon.png" alt="풍선">
+      <div class="contents">
+
+        <!-- 좌측 예약 폼 / 카드배너 영역 -->
+        <div class="booking">
+          <div class="formNav">
+            <div class="subNav">
+              <img src="images/icon_plane.png" alt="공항예약아이콘">
+              <p>공항예약</p>
+            </div>
+          </div>
+          <div class="formWrap">
+            <div class="form">
+              <form>
+                <fieldset>
+                  <legend>여행일정1</legend>
+                  <ul>
+                    <li>
+                      <label for="golo">가고싶은 나라를 선택하세요.</label>
+                      <select name="golo" id="golo">
+                        <option value="">선택하세요</option>
+                        <option value="미국">미국</option>
+                        <option value="일본">일본</option>
+                        <option value="중국">중국</option>
+                      </select>
+                    </li>
+                    <li class="clearfix">
+                      <div class="left">
+                        <label for="sdata">출발일</label>
+                        <input type="date" id="sdata">
+                      </div>
+                      <div class="right">
+                        <label for="edata">도착일</label>
+                        <input type="date" id="edata">
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="left">
+                        <label for="sgrade">좌석등급</label>
+                        <select name="grade" id="sgrade">
+                          <option value="비지니스">비지니스</option>
+                          <option value="이코노미">이코노미</option>
+                        </select>
+                      </div>
+                      <div class="adult">
+                        <label for="num">성인</label>
+                        <input type="number" id="num" placeholder="1">
+                      </div>
+                      <div class="kids">
+                        <label for="num">아이</label>
+                        <input type="number" id="num" placeholder="1">
+                      </div>
+                    </li>
+                    <li class="btn-search">
+                      <i class="fas fa-search"></i>
+                      <input type="submit" value="검색하기" class="btn-search">
+                  </li>
+                </ul>
+              </fieldset>
+            </form>
+            </div>
+          </div> <!-- end:formWrap -->
+        </div> <!-- end:booking -->
+
+        <div class="one1th clearfix"><!-- 배너 2장 -->
+          <div class="card">
+            <img src="images/card01.jpg" alt="프랑스">
+            <div class="prodbox">
+              <a href="#">
+                <p class="prod_name">프랑스</p>
+                <p class="prod_price">￦1,900,000~</p>
+                <span class="arrow">arrow</span>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/card02.jpg" alt="일본">
+            <div class="prodbox">
+              <a href="#">
+                <p class="prod_name">일본</p>
+                <p class="prod_price">￦890,000~</p>
+                <span class="arrow">arrow</span>
+              </a>
+            </div>
+          </div>
+        </div> <!-- end:banner -->
+      </div> <!-- end:contents -->
+  <!-- 우측 타이틀 문구 -->
+      <div class="title">
+        <h2>TRAVEL</h2><h2 class="go">GO</h2>
+        <p>지금, 여행이 떠나고 싶다면?<br>
+          하이미디어와 여행을 떠나자!</p>
+      </div>
+    </div> <!-- end:main_pack -->
+    <!-- 2th//banner -->
+    <div class="two2th clearfix"><!-- 두번째줄 4장 -->
+      <div class="sliderWrap clearfix">
+
+
+        <div class="card slider">
+          <div>
+            <img src="images/card03.jpg" alt="힐튼호텔">
+            <div class="prodbox">
+              <a href="#">HILLTON HOTEL (PARIS)
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div>
+            <img src="images/card03.jpg" alt="힐튼호텔">
+            <div class="prodbox">
+              <a href="#">HILLTON HOTEL (PARIS)
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="card slider">
+          <img src="images/card03.jpg" alt="힐튼호텔">
+          <img src="images/card04.jpg" alt="힐튼호텔">
+          <div class="prodbox">
+            <a href="#">HILLTON HOTEL (PARIS)
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="sliderWrap clearfix">
+        <div class="card slider">
+          <img src="images/card04.jpg" alt="디즈니랜드">
+          <img src="images/card05.jpg" alt="디즈니랜드">
+          <div class="prodbox">
+            <a href="#">관광명소(디즈니랜드)
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="card three">
+        <img src="images/card05.jpg" alt="도쿄날씨">
+        <p class="tokyo">TOKYO</p>
+        <div class="prodbox">
+          <a href="#">
+            <p class="prod_name">20℃ <span>구름조금</span></p>
+            <p>습도 60% 바람 남남동 2m/s</p>
+          </a>
+        </div>
+      </div>
+      <div class="card four">
+        <img src="images/card06.jpg" alt="facebook여행후기">
+        <div class="facebook">
+          <p>"해외여행은 처음이었는데,<br>
+            하이미디어여행 덕분에 무사히<br>
+            다녀올 수 있었어요."</p>
+          <p>프랑스 파리 자유여행</p>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="prodbox">
+          <a href="#">
+            <p class="prod_name">facebook 여행후기</p>
+            <p>(임정희님)</p>
+          </a>
+        </div>
+      </div>
+    </div> <!-- end:2th//banner -->
+
+    <!-- trd3th//banner -->
+  <div class="trd3th clearfix"> <!-- 두번째줄 4장 -->
+    <div class="card">
+      <a href="#">
+        <img src="images/card07.jpg" alt="여행정보">
+          <div class="overlay"></div>
+          <div class="cardtext">
+            <h3><i class="fas fa-plane icon"></i>여행정보</h3>
+            <p>다양한 나라의 명소와 맛집 등<br>
+              상세한 정보를 볼 수 있습니다.</p>
+          </div>
+        <div class="more">
+          <div class="moreicon">
+            <span class="add1"></span>
+            <span class="add2"></span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="card">
+      <a href="#">
+      <img src="images/card08.jpg" alt="맛집정보">
+        <div class="overlay"></div>
+        <div class="cardtext">
+          <h3><i class="fas fa-utensils icon"></i>맛집정보</h3>
+          <p>다양한 나라의 명소와 맛집 등<br>
+            상세한 정보를 볼 수 있습니다.</p>
+        </div>
+      <div class="more">
+        <div class="moreicon">
+          <span class="add1"></span>
+          <span class="add2"></span>
+        </div>
+      </div>
+    </a>
+    </div>
+    <div class="card">
+      <a href="#">
+      <img src="images/card09.jpg" alt="숙박정보">
+        <div class="overlay"></div>
+        <div class="cardtext">
+          <h3><i class="fas fa-hotel icon"></i>숙박정보</h3>
+          <p>다양한 나라의 명소와 맛집 등<br>
+            상세한 정보를 볼 수 있습니다.</p>
+        </div>
+      <div class="more">
+        <div class="moreicon">
+          <span class="add1"></span>
+          <span class="add2"></span>
+        </div>
+      </div>
+    </a>
+    </div>
+    <div class="card">
+      <a href="#">
+      <img src="images/card10.jpg" alt="여행자후기">
+        <div class="overlay"></div>
+        <div class="cardtext">
+          <h3><i class="fas fa-thumbs-up icon"></i>여행자후기</h3>
+          <p>다양한 나라의 명소와 맛집 등<br>
+            상세한 정보를 볼 수 있습니다.</p>
+        </div>
+      <div class="more">
+        <div class="moreicon">
+          <span class="add1"></span>
+          <span class="add2"></span>
+        </div>
+      </div>
+    </a>
+    </div>
+  </div> <!-- end:trd3th//banner -->
+
+  </div> <!-- end:contentWrap -->
+
+  <footer id="footer">
+    <div class="footerTopWrap">
+      <ul class="footerTop">
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보취급방침</a></li>
+        <li><a href="#">사이트맵</a></li>
+        <li><a href="#">고객센터</a></li>
+        <li><a href="#">광고 및 제휴문의</a></li>
+      </ul>
+    </div>
+    <div class="footerBottom">
+      <p>123-456 서울특별시 구로구 구로동 (주)하이미디어
+        사업자등록번호 : 123-45-678910
+        대표이사 : 홍길동
+        대표번호 : 02-1234-5678</p>
+      <p>COPYRIGHT(c)2014 HIMEDIA TOUR.ALL RIGHTS RESERVED.</p>
+    </div>
+
+  </footer>
+
+
+
+
+</body>
+</html>
