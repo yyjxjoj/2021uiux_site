@@ -9,6 +9,12 @@
   <link rel="stylesheet" href="css/jquery.bxslider.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/respansive.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/jquery.bxslider.js"></script>
   <script src="js/script.js"></script>
@@ -22,72 +28,102 @@
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-      <nav id="main_menu">
-        <ul class="clearfix">
-          <li><a href="#">예약</a></li>
-          <li><a href="#">객실</a></li>
-          <li><a href="#">다이닝</a></li>
-          <li><a href="#">패키지</a></li>
-          <li><a href="#">미팅</a></li>
-          <li><a href="#">고객문의</a></li>
-        </ul>
-      </nav>
     </div>
+    <nav id="main_menu">
+      <ul class="clearfix">
+        <li><a href="#">예약</a></li>
+        <li><a href="#">객실</a></li>
+        <li><a href="#">다이닝</a></li>
+        <li><a href="#">패키지</a></li>
+        <li><a href="#">부대시설</a></li>
+        <li><a href="#">미팅</a></li>
+        <li><a href="#">고객문의</a></li>
+      </ul>
+    </nav>
 
-    <div class="sliderWrap">
-      <ul class="slider">
+    <div class="main_sliderWrap img_controls">
+      <ul class="main_slider">
         <li class="slider1st">
           <!-- <img src="images/mainimg01.jpg" alt=""> -->
-          <div class="slider_txt">
-            <h3>Lorem ipsum dolor sit amet.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, omnis.</p>
+          <div class="main_slider_txt">
+            <div class="promotion_box">
+              <ul class="clearfix">
+                <li class="package">SUMMER PACKAGE</li>
+                <li class="package_link">SEASONS PROMOTION</li>
+              </ul>
+            </div>
+            <h2>SUMMER VOYAGE</h2>
+            <h3>그랜드 조선 제주로 떠나는 완벽한 여름 바캉스!</h3>
           </div>
         </li>
         <li class="slider2st">
           <!-- <img src="images/mainimg02.jpg" alt=""> -->
-          <div class="slider_txt">
-            <h3>Lorem ipsum dolor sit amet.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, omnis.</p>
+          <div class="main_slider_txt">
+            <div class="promotion_box">
+              <ul class="clearfix">
+                <li class="package">SUMMER PACKAGE</li>
+                <li class="package_link">SEASONS PROMOTION</li>
+              </ul>
+            </div>
+            <h2>SUMMER VOYAGE</h2>
+            <h3>그랜드 조선 제주로 떠나는 완벽한 여름 바캉스!</h3>
           </div>
         </li>
       </ul>
+      <div class="controls">
+        <span class="prev_btn">prev</span>
+        <span class="next_btn">next</span>
+      </div>
     </div>
   </header>
 
+<div class="contentWrap">
   <div class="reservation">
     <div class="date">예약날짜</div>
   </div>
-
   <div class="content">
     <ul class="contList">
       <li>
-        <div class="sliderWrap">
-          <ul class="slider">
+        <div class="content_sliderWrap">
+          <ul class="content_slider">
             <li class="slider1st">
               <img src="images/contimg01.jpg" alt="img01">
-              <div class="slider_txt">
-                <h3>당신의 여행이 가장 완벽해지는 순간</h3>
+              <div class="content_slider_txt">
+                <h3>당신의 여행이<br>가장 완벽해지는 순간</h3>
               </div>
             </li>
             <li class="slider2st">
               <img src="images/contimg02.jpg" alt="img02">
-              <div class="slider_txt">
-                <h3>당신의 여행이 가장 완벽해지는 순간</h3>
+              <div class="content_slider_txt">
+                <h3>당신의 여행이<br>가장 완벽해지는 순간</h3>
               </div>
             </li>
             <li class="slider3st">
               <img src="images/contimg03.jpg" alt="img03">
-              <div class="slider_txt">
-                <h3>당신의 여행이 가장 완벽해지는 순간</h3>
+              <div class="content_slider_txt">
+                <h3>당신의 여행이<br>가장 완벽해지는 순간</h3>
               </div>
             </li>
           </ul>
         </div>
       </li>
       <li>2</li>
-      <li>3</li>
-      <li>4</li>
-      <li><img src="images/contimg05.jpg" alt="img05"></li>
+      <li> <!--youtube link  -->
+        <div class="video_link">
+          <img src="images/videoimg.jpg" alt="videoimg">
+          <a href="https://youtu.be/IqKopQ1m5aY" target="_blank"><img src="images/play_icon.png" alt="play"></a>
+        </div>
+      </li>
+      <li>
+        <p>Kids</p>
+      </li>
+      <li>
+        <img src="images/contimg05.jpg" alt="img05">
+        <div class="fitness_txt">
+          <p>FITNESS</p>
+          <h3>다양한 시설과<br>웰니스 프로그램</h3>
+        </div>
+      </li>
       <li>6</li>
       <li><img src="images/contimg07.jpg" alt="img07"></li>
       <li>8</li>
@@ -96,6 +132,8 @@
       <li>11</li>
     </ul>
   </div>
+</div>
+
 <div class="container"> <!-- w100% -->
   <div class="section"> <!-- w1240 -->
 
@@ -151,3 +189,36 @@
 
 </body>
 </html>
+->
+        </div> <!--card-->
+      </li>
+    </ul>
+
+  </div> <!--section-->
+</div> <!-- container -->
+
+
+
+
+
+
+</body>
+</html>
+</body>
+</html>
+l>
+>
+
+  </div> <!--section-->
+</div> <!-- container -->
+
+
+
+
+
+
+</body>
+</html>
+</body>
+</html>
+l>
