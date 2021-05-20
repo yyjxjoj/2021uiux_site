@@ -15,4 +15,16 @@ $(document).ready(function(){
     pager: true,
     controls: false,
   });
+
+  let newsSlider = $(".news_slider").bxSlider({
+    pager: false,
+    controls: false,
+  });
+  $(".box_controls .controls .next_btn").click(function(){
+    newsSlider.goToNextSlide();
+  });
+  $(".box_controls .controls .prev_btn").click(function(){
+    newsSlider.goToPrevSlide();
+  });
+
 });
