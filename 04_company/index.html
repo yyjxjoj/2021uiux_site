@@ -4,113 +4,179 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Patra</title>
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/jquery.bxslider.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/respansive.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <!-- font -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- js -->
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/jquery.bxslider.js"></script>
   <script src="js/script.js"></script>
-</head>
-<body>
-  <header>
-    <div id="headerTop" class="clearfix">
-      <h1 class="logo"><a href="#">LOGO</a></h1>
-      <div class="toggleMenu">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-    </div>
-    <nav id="main_menu">
-      <ul class="clearfix">
-        <li><a href="#">예약</a></li>
-        <li><a href="#">객실</a></li>
-        <li><a href="#">다이닝</a></li>
-        <li><a href="#">패키지</a></li>
-        <li><a href="#">부대시설</a></li>
-        <li><a href="#">미팅</a></li>
-        <li><a href="#">고객문의</a></li>
-      </ul>
-    </nav>
+  <script src="js/wow.js"></script>
+  <!-- swiper js -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- CSSgram -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cssgram/0.1.10/cssgram.min.css">
 
-    <div class="main_sliderWrap img_controls">
-      <ul class="main_slider">
-        <li class="slider1st">
-          <!-- <img src="images/mainimg01.jpg" alt=""> -->
-          <div class="main_slider_txt">
-            <div class="promotion_box">
-              <ul class="clearfix">
-                <li class="package">SUMMER PACKAGE</li>
-                <li class="package_link">SEASONS PROMOTION</li>
-              </ul>
-            </div>
-            <h2>SUMMER VOYAGE</h2>
-            <h3>그랜드 조선 제주로 떠나는 완벽한 여름 바캉스!</h3>
-          </div>
-        </li>
-        <li class="slider2st">
-          <!-- <img src="images/mainimg02.jpg" alt=""> -->
-          <div class="main_slider_txt">
-            <div class="promotion_box">
-              <ul class="clearfix">
-                <li class="package">SUMMER PACKAGE</li>
-                <li class="package_link">SEASONS PROMOTION</li>
-              </ul>
-            </div>
-            <h2>SUMMER VOYAGE</h2>
-            <h3>그랜드 조선 제주로 떠나는 완벽한 여름 바캉스!</h3>
-          </div>
-        </li>
-      </ul>
-      <div class="controls">
-        <span class="prev_btn">prev</span>
-        <span class="next_btn">next</span>
+</head>
+
+  <header>
+    <div class="headerWrap">
+      <div id="headerTop" class="clearfix">
+        <a href="#"><h1 class="logo">logo</h1></a>
+        <div class="toggleMenu">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div class="language">
+          <div class="kr lang_active">KR</div>
+          <div class="en">EN</div>
+        </div>
       </div>
-    </div>
+
+        <nav id="main_menu">
+          <ul class="clearfix">
+            <li><a href="#">Product</a>
+              <div class="submenu">
+                <ul>
+                  <li><a href="#!">모든 제품 보기</a></li>
+                  <li><a href="#!">시리즈별</a></li>
+                  <li><a href="#!">제품별</a></li>
+                  <li><a href="#!">컨셉별</a></li>
+              </ul>
+              </div>
+            </li>
+
+            <li><a href="#">Patra Labs</a>
+              <div class="submenu">
+                <ul><a href="#!">Patra</a>
+                  <li><a href="#!">경영이념</a></li>
+                  <li><a href="#!">히스토리</a></li>
+                  <li><a href="#!">수상 및 인증</a></li>
+                  <li><a href="#!">R&D 연구실적</a></li>
+                  <li><a href="#!">글로벌 파트라</a></li>
+                </ul>
+                <ul><a href="#!">Patra NOW</a>
+                  <li><a href="#!">뉴스</a></li>
+                  <li><a href="#!">사회공헌</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li><a href="#">Community</a>
+              <div class="submenu">
+                <ul>
+                  <li><a href="#!">미디어파트라</a></li>
+                  <li><a href="#!">이벤트</a></li>
+                  <li><a href="#!">리뷰</a></li>
+                  <li><a href="#!">매장찾기</a></li>
+                  <li><a href="#!">대리점 개설안내</a></li>
+                  <li><a href="#!">제품설명서 다운로드</a></li>
+                  <li><a href="#!">카탈로그 다운로그</a></li>
+              </ul>
+            </div>
+            </li>
+
+            <li><a href="#">Customer Center</a>
+              <div class="submenu">
+                <ul>
+                  <li><a href="#!">공지사항</a></li>
+                  <li><a href="#!">A/S 안내</a></li>
+                  <li><a href="#!">FAQ</a></li>
+              </ul>
+            </div>
+            </li>
+
+          </ul> <!-- clearfix -->
+        </nav> <!-- main_menu -->
+    </div> <!-- headerWrap -->
+
+      <div class="main_sliderWrap img_controls">
+        <ul class="main_slider">
+          
+          <li class="slider1st">
+            <div class="main_slider_txt">
+              <h2>PATRA IS PARTNER</h2>
+              <h3>나는 “당신의 가장 가까운 퍼스널 파트너”입니다.</h3>
+              <p>“당신이 이룬 성공의 순간을 항상 함께 해왔죠”</p>
+            </div>
+          </li>
+          
+          <li class="slider2st">
+            <div class="main_slider_txt">
+              <h2>PATRA IS PARTNER</h2>
+              <h3>나와 함께한 시간은 언제나 특별합니다.</h3>
+              <p>“당신의 열정이 다시 빛날 수 있도록 쉼표를 선물합니다”</p>
+            </div>
+          </li>
+          
+          <li class="slider3st">
+            <div class="main_slider_txt">
+              <h2>PATRA IS PARTNER</h2>
+              <h3>처음에는 아주 작은 차이였습니다.</h3>
+              <p>“그런데 몸이 기억하기 시작했죠”</p>
+            </div>
+          </li>
+                  
+          <li class="slider4st">
+            <div class="main_slider_txt">
+              <h2>PATRA IS PARTNER</h2>
+              <h3>내 몸에 딱 맞는 Chair Therapy!</h3>
+              <p>“의자를 바꾸면 삶이 달라집니다”</p>
+            </div>
+          </li>
+                  
+          <li class="slider5st">
+            <div class="main_slider_txt">
+              <h2>PATRA IS PARTNER</h2>
+              <h3>어디서나 당신이 원하는 모습으로 공간에 따라 다양하게 변신합니다.</h3>
+              <p>“협업 공간에 따라 다양한 활용이 가능한 의자입니다”</p>
+            </div>
+          </li>
+          
+          <li class="slider6st">
+            <div class="main_slider_txt">
+              <h2>PATRA IS PARTNER</h2>
+              <h3>“모든 순간을 당신과 함께!”</h3>
+              <p>“Patra와 함께 달라지는 라이프스타일을 느껴보세요”</p>
+            </div>
+          </li>
+
+        </ul>
+        <div class="controls">
+          <span class="prev_btn">prev</span>
+          <span class="next_btn">next</span>
+        </div>
+      </div>
   </header>
 
 <div class="contentWrap">
-  <div class="reservation">
-    <div class="formWrap">
-
-    </div>
-  </div>
   <div class="content">
     <ul class="contList">
-      <li> <!-- 1th -->
-        <div class="content_sliderWrap">
-          <ul class="content_slider">
-            <li class="slider1st">
-              <img src="images/contimg01.jpg" alt="img01">
-              <div class="content_slider_txt">
-                <h3>당신의 여행이<br>가장 완벽해지는 순간</h3>
-              </div>
-            </li>
-            <li class="slider2st">
-              <img src="images/contimg02.jpg" alt="img02">
-              <div class="content_slider_txt">
-                <h3>당신의 여행이<br>가장 완벽해지는 순간</h3>
-              </div>
-            </li>
-            <li class="slider3st">
-              <img src="images/contimg03.jpg" alt="img03">
-              <div class="content_slider_txt">
-                <h3>당신의 여행이<br>가장 완벽해지는 순간</h3>
-              </div>
-            </li>
-          </ul>
+
+      <li class="cardicon"> <!-- 1th -->
+        <div>
+          <a href="#">
+            <img src="images/icon/card_map.png" alt="아이콘">
+            <p>매장 찾기</p>
+        </a>
         </div>
       </li>
 
-      <li> <!-- 2th -->
+      <li> <!-- 2th movie -->
+        <div class="video_link">
+          <img src="images/bg/video.png" alt="미리보기">
+          <a href="https://youtu.be/IqKopQ1m5aY" target="_blank"><img src="images/play_icon.png" alt="play"></a>
+        </div>
+      </li>
+
+      <li> <!-- 3th -->
         <div class="news_wrap">
             <div class="news_sliderWrap box_controls">
               <div class="news_left">
@@ -119,24 +185,31 @@
               <ul class="news_slider clearfix">
                 <li class="slider1st">
                   <div class="news_txt">
-                    <h3>‘떠나요 위켄드문’<br>허니문 이벤트</h3>
-                    <p>제주항공은 결혼예정인 예비부부를 대상으로 ‘그랜드 조선 제주’와 함께 허니문 초청 경품 이벤트를 진행한다.</p>
+                    <h3>GRAND OPEN<br>인천중앙 전시장</h3>
+                    <p>인천 남동구 남동대로 748번길 19 (구월동) 신영빌딩 2층
+                      <br><br>032-469-6565</p>
                   </div>
-                  <img src="images/newsimg01.png" alt="뉴스우측이미지">
+                  <img src="images/bg/newsimg01.png" alt="뉴스img1">
                 </li>
                 <li class="slider2st">
                   <div class="news_txt">
-                    <h3>‘더 리틀 트래블러’<br>패키지 출시</h3>
-                    <p>5월 가정의 달을 맞아 부모와 아이 모두에게 편안한 쉼과 즐거움을 선사하는 패밀리 패키지 출시!</p>
+                    <h3>PATRA DAY 2차
+                      <br>이벤트 당첨 결과발표</h3>
+                    <p>이벤트기간
+                      <br>2018.03.19 ~ 2018.04.03
+                      <br>제품 구매하면 영화권 증정!</p>
                   </div>
-                  <img src="images/newsimg02.png" alt="뉴스우측이미지">
+                  <img src="images/bg/newsimg02.png" alt="뉴스img2">
                 </li>
                 <li class="slider3st">
                   <div class="news_txt">
-                    <h3>‘일상의 균형’<br>겟 유얼 밸런스</h3>
-                    <p>여행 중에도 일상의 균형을 유지하도록 돕는 겟 유얼 밸런스 웰니스 패키지. 럭셔리 리조트형 호텔  '그랜드 조선 제주'가 함께해요!</p>
+                    <h3>PATRA DAY 1차
+                      <br>이벤트 당첨 결과발표</h3>
+                     <p>이벤트기간
+                      <br>2018.03.05 ~ 2018.03.18
+                      <br>제품 구매하면 영화권 증정!</p>
                   </div>
-                  <img src="images/newsimg03.png" alt="뉴스우측이미지">
+                  <img src="images/bg/newsimg03.png" alt="뉴스img3">
                 </li>
               </ul>
               <div class="controls">
@@ -147,220 +220,350 @@
         </div>
       </li>
 
-      <li> <!-- 3th youtube link  -->
-        <div class="video_link">
-          <img src="images/videoimg.jpg" alt="videoimg">
-          <a href="https://youtu.be/IqKopQ1m5aY" target="_blank"><img src="images/play_icon.png" alt="play"></a>
-        </div>
-      </li>
-      <li class="kids"> <!-- 4th -->
-        <p>Kids</p>
-      </li>
-      <li class="fitness"> <!-- 5th -->
-          <img src="images/contimg05.jpg" alt="img05">
-            <div class="fitness_txt">
-              <p>FITNESS</p>
-              <h3>다양한 시설과<br>웰니스 프로그램</h3>
-            </div>
-      </li> <!-- 6th -->
-      <li class="resv">
-        <div class="resv_confirm">
-          <a href="#"><img src="images/icon_booking.png" alt="예약확인icon">
-          <p>예약확인</p>
+      <li class="cardicon"> <!-- 4th -->
+        <div>
+          <a href="#">
+            <img src="images/icon/card_store.png" alt="아이콘">
+            <p>대리점 개설</p>
         </a>
         </div>
       </li>
-      <li> <!-- 7th -->
-        <img src="images/contimg07.jpg" alt="img07">
-      </li>
-      <li class="program"> <!-- 8th -->
-        <div class="program_name">
-          <h4>그랑 조이 키즈 프로그램</h4>
-          <p>2021.03.31 - 2021.05.31</p>
-          <img src="images/icon_arrow.png" alt="화살표">
+
+      <li class="cardicon"> <!-- 5th -->
+        <div>
+          <a href="#">
+            <img src="images/icon/card_labs.png" alt="아이콘">
+            <p>연구 실적</p>
+        </a>
         </div>
       </li>
-      <li class="membership"> <!-- 9th -->
-          <div class="membership_txt">
-            <a href="#"><img src="images/icon_membership.png" alt="멤버십icon">
-            <p>멤버십</p>
-          </a>
+
+      <li class="cardimg"> <!-- 6th -->
+        <img src="images/bg/cardimg_quality.jpg" alt="image">
+          <div class="cardimg_txt">
+            <p>QUALITY</p>
+            <h3>고객이 원하기 전에
+            <br>먼저 고객의 필요를 이해하는 설계</h3>
           </div>
       </li>
-      <li> <!-- 10th -->
-        <img src="images/contimg10.jpg" alt="img10">
+
+      <li class="cardimg 7th"> <!-- 7th -->
+        <img src="images/bg/cardimg_patra.jpg" alt="image">
+          <div class="cardimg_txt">
+            <p>PRTRA</p>
+            <h3>파트라
+            <br>의자생활연구소</h3>
+          </div>
       </li>
-      <li> <!-- 11th -->
-        <div class="lending">
-          <h3>Lending Library</h3>
-          <p>마음이 가벼울수록<br>여행은 즐거워집니다.</p>
+
+      <li class="cardimg"> <!-- 8th -->
+        <img src="images/bg/cardimg_trust.jpg" alt="image">
+          <div class="cardimg_txt">
+            <p>TRUST</p>
+            <h3>바른 길을 간다는 마음가짐
+            <br>원칙 중심의 정도 경영</h3>
+          </div>
+      </li>
+
+      <li class="cardicon"> <!-- 9th -->
+        <div>
+          <a href="#">
+            <img src="images/icon/card_done.png" alt="아이콘">
+            <p>사회공헌활동</p>
+        </a>
         </div>
       </li>
+
+      <li class="cardicon"> <!-- 10th -->
+        <div>
+          <a href="#">
+            <img src="images/icon/card_done.png" alt="아이콘">
+            <p>사회공헌활동</p>
+        </a>
+        </div>
+      </li>
+
+      <li class="cardimg"> <!-- 11th -->
+        <img src="images/bg/cardimg_improve.jpg" alt="image">
+          <div class="cardimg_txt">
+            <p>IMPROVE</p>
+            <h3>고객의 라이프 스타일을
+            <br>변화시킬 수 있는 꾸준한 창조의 힘</h3>
+          </div>
+      </li>
+
     </ul>
   </div>
-</div>
+</div> <!-- contentWrap -->
+
+<div class="productWrap">
+  <div class="besttit">BEST PRODUCT</div>
+
+  <div class="swiperWrap">
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide"> <!-- 1th -->
+          <a href="#!">
+            <img src="images/product/product01.jpg" alt="LIBRA제품보기">
+            <h3>LIBRA</h3>
+          </a>
+            <p>새로운 컨셉의 인간공항적 기능성 의자
+              <br>리브라(LIBRA) CLB11PA-WH</p>
+        </div> <!-- 1th -->
+
+        <div class="swiper-slide"> <!-- 2th -->
+          <a href="#!">
+            <img src="images/product/product02.jpg" alt="MARIN제품보기">
+            <h3>MARIN</h3>
+          </a>
+            <p>파트라 학생용의자
+            <br>마린(MARIN) CMA11PA-WH</p>
+        </div> <!-- 2th -->
+
+        <div class="swiper-slide"> <!-- 3th -->
+          <a href="#!">
+            <img src="images/product/product03.jpg" alt="VOLF제품보기">
+            <h3>VOLF</h3>
+          </a>
+          <p>임원 및 대표를 위한 프리미엄 의자
+              <br>파트라 볼프(VOLF) CVF11W-L(천연가죽)</p>
+        </div> <!-- 3th -->
+
+        <div class="swiper-slide"> <!-- 4th -->
+          <a href="#!">
+            <img src="images/product/product04.jpg" alt="FLEX제품보기">
+            <h3>FLEX</h3>
+          </a>
+          <p>허리가편한 게이밍의자
+              <br>플렉스(FLEX) CFX11PA</p>
+        </div> <!-- 4th -->
+
+        <div class="swiper-slide"> <!-- 5th -->
+          <a href="#!">
+            <img src="images/product/product05.jpg" alt="MONO제품보기">
+            <h3>MONO</h3>
+          </a>
+          <p>심플한 디자인과 편안함이 돋보이는 테스크 체어
+              <br>모노(MONO) CMN11PB</p>
+        </div> <!-- 5th -->
+
+        <div class="swiper-slide"> <!-- 6th -->
+          <a href="#!">
+            <img src="images/product/product06.jpg" alt="MOD제품보기">
+            <h3>MOD</h3>
+          </a>
+          <p>홈, 오피스 어디에서든 캐주얼한 공간을 연출
+              <br>모드(MOD) CMD33</p>
+        </div> <!-- 6th -->
+
+        <div class="swiper-slide"> <!-- 7th -->
+          <a href="#!">
+            <img src="images/product/product07.jpg" alt="POLY제품보기">
+            <h3>POLY</h3>
+          </a>
+          <p>협업공간에 따라 다양한 활용히 가능한 의자
+              <br>폴리(POLY)
+              CPY43MS/CPY43MS-WH</p>
+        </div> <!-- 7th -->
+
+        <div class="swiper-slide"> <!-- 8th -->
+          <a href="#!">
+            <img src="images/product/product08.jpg" alt="AMIGO제품보기">
+            <h3>AMIGO</h3>
+          </a>
+          <p>인체곡선의 형사에 따른 디자인
+              <br>아미고(AMIGO) CAM23</p>
+        </div> <!-- 8th -->
+
+      </div> <!-- swiper-wrapper -->
+    </div> <!-- swiper-container -->
+  </div> <!-- swiperWrap -->
+
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div> <!-- productWrap -->
 
 <div class="container"> <!-- w100% -->
   <div class="section"> <!-- w1240 -->
+    <div class="tit1">
+      <h2>VISION</h2>
+      <ul class="clearfix">
+        <li>
+          <div class="card">
+            <div class="card_body">
+              <h5>종합가구브랜드 TOP5</h5>
+              <p>TOP5</p>
+              <img src="images/icon/vision01.png" alt="이미지">
+            </div>
+          </div> <!--card-->
+        </li>
+        
+        <li>
+          <div class="card">
+            <div class="card_body">
+              <h5>수출 NO.1</h5>
+              <p>NO.1</p>
+              <img src="images/icon/vision02.png" alt="이미지">
+            </div>
+          </div> <!--card-->
+        </li>
+              
+        <li>
+          <div class="card">
+            <div class="card_body">
+              <h5>중국 매출 1억위안</h5>
+              <p>1억 위안</p>
+              <img src="images/icon/vision03.png" alt="이미지">
+            </div>
+          </div> <!--card-->
+        </li>
+      </ul>
+    </div> <!--tit1-->
 
-    <h4>비젼</h4>
-    <p>VISION 2021</p>
-    <ul class="clearfix">
-      <!-- <li onclick="location.href='http://www.daum.net'"> -->
-      <li>
-        <div class="card">
-          <img src="images/banner_icon01_01.png" alt="">
-          <div class="card_body">
-            <h3>Engineer</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, illum.</p>
-          </div> <!--card_body-->
-        </div> <!--card-->
-      </li>
-      <li>
-        <div class="card">
-          <img src="images/banner_icon01_02.png" alt="">
-          <div class="card_body">
-            <h3>Engineer</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, illum.</p>
-          </div> <!--card_body-->
-        </div> <!--card-->
-      </li>
-      <li>
-        <div class="card">
-          <img src="images/banner_icon01_03.png" alt="">
-          <div class="card_body">
-            <h3>Engineer</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, illum.</p>
-          </div> <!--card_body-->
-        </div> <!--card-->
-      </li>
-      <li>
-        <div class="card">
-          <img src="images/banner_icon01_04.png" alt="">
-          <div class="card_body">
-            <h3>Engineer</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, illum.</p>
-          </div> <!--card_body-->
-        </div> <!--card-->
-      </li>
-    </ul>
+    <div class="tit2">
+      <h2>핵심가치</h2>
+        <ul class="clearfix">
+          <li>
+            <div class="card">
+              <div class="card_body">
+                <h5>창의적이고 혁신적인 도전정신</h5>
+                <p>도전</p>
+                <img src="images/icon/vision04.png" alt="이미지">
+              </div>
+            </div> <!--card-->
+          </li>
+
+          <li>
+            <div class="card">
+              <div class="card_body">
+                <h5>유연한 열린 자세</h5>
+                <p>소통</p>
+                <img src="images/icon/vision05.png" alt="이미지">
+              </div>
+            </div> <!--card-->
+          </li>
+
+          <li>
+            <div class="card">
+              <div class="card_body">
+                <h5>발 빠른 대응과 과감한 추진력</h5>
+                <p>SPPED</p>
+                <img src="images/icon/vision06.png" alt="이미지">
+              </div>
+            </div> <!--card-->
+          </li>
+        </ul>
+      </div> <!--tit2-->
 
   </div> <!--section-->
 </div> <!-- container -->
 
-<div class="snswrap clearfix">
-  <div class="sns_title">
-    <h2>SNS</h2>
-      <a href="#"><img src="images/ico_sns_insta_2.png" alt="인스타그램"></a>
-      <a href="#"><img src="images/ico_sns_josun_2.png" alt="조선호텔"></a>
-      <a href="#"><img src="images/ico_sns_kakao_2.png" alt="카카오채널"></a>
-      <a href="#"><img src="images/ico_sns_youtube_2.png" alt="유투브"></a>
-  </div>
-  <ul class="clearfix">
-    <li class="sns_img">
-      <img src="images/sns_img1.png" alt="내용1">
-      <a href="#"><img src="images/icon_more.png" alt="내용더보기"></a>
-    </li>
-    <li class="sns_txt">
-      <p>이국적인 야자수와 프라이빗 카바나에서 즐기는 가족들과의 즐거운 시간
-        <br>👨👩👦👦<br><br>
-        초록빛 야자수 아래에서 수영을 즐기고 포근한 카바나 안에서 편안한 휴식을, 수영 후 잇투오의 스낵 메뉴를 즐기다보면 어느덧 가든풀은 행복한 아이들의 웃음소리로 가득해집니다.🎈</p>
-    </li>
-    <li class="sns_img">
-      <img src="images/sns_img3.png" alt="내용3">
-      <a href="#"><img src="images/icon_more.png" alt="내용더보기"></a>
-    </li>
-    <li class="sns_txt">
-      <p>날씨가 따뜻해지면서 해외여행을 갔을 때 선베드에 누워 칵테일 한잔을 즐겼던 기억이 문득 떠오른다.<br>-<br>
-        그랜드조선 제주의 이국적인 풍경과 분위기가 해외여행의 그리움을 채워줄 뿐만 아니라 그 어떤 여행보다도 소중한 순간을 선사할 것이다.</p>
-    </li>
-    <li class="sns_img">
-      <img src="images/sns_img2.png" alt="내용2">
-      <a href="#"><img src="images/icon_more.png" alt="내용더보기"></a>
-    </li>
-    <li class="sns_txt">
-      <p>제주에 펼쳐진 몽환적인 공간✨
-        <br>
-        My Little Wonderland로 여러분을 초대합니다.
-        <br>
-        컨템포러리 아트 코스메틱 브랜드 #투쿨포스쿨 TAG와 그랜드 조선 제주가 함께 선보이는 핑크빛 원더랜드🌈
-        <br>
-        하루종일 머무르고 싶은 뷰티 컨셉룸에서 투쿨포스쿨의 TAG 그리고 그랜드 조선 시그니처 와인을 만나 보세요.</p>
-    </li>
-  </ul>
+<div class="cardWrap">
+  <div class="product_card">
+
+    <div class="product_body">
+      <img src="images/bg/product_libra.png" alt="제품이미지" class="productimg moon">
+      <div class="title">
+        <h4>LIBRA</h4>
+        <h5>파트라와 함께한 시간은
+          <br>언제나 특별합니다</h5>
+        <h6>당신의 열정이 다시 빛날 수 있도록
+          <br>쉼표를 선물하기도 하죠</h6>
+          <div class="product_link">
+            <a href="#!">
+            <p>리브라 제품보기</p>
+            <nav><img src="images/icon/icon_arr_blue.png" alt="화살표"></nav>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="product_body">
+      <img src="images/bg/product_marin.png" alt="제품이미지" class="productimg moon">
+      <div class="title">
+        <h4>MARIN</h4>
+        <h5>처음에는 아주 작은
+          <br>차이였습니다</h5>
+        <h6>그런데 몸이 기억하기 시작했죠</h6>
+          <div class="product_link">
+            <a href="#!">
+            <p>마린 제품보기</p>
+            <nav><img src="images/icon/icon_arr_blue.png" alt="화살표"></nav>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="product_body">
+      <img src="images/bg/product_kyle.png" alt="제품이미지" class="productimg moon">
+      <div class="title">
+        <h4>KYLE</h4>
+        <h5>내 몸에 딱 맞는
+          <br>CHAIR THERAPY</h5>
+        <h6>의자를 바꾸면 삶이 달라집니다</h6>
+          <div class="product_link">
+            <a href="#!">
+            <p>카일 제품보기</p>
+            <nav><img src="images/icon/icon_arr_blue.png" alt="화살표"></nav>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="product_body">
+      <img src="images/bg/product_poly.png" alt="제품이미지" class="productimg moon">
+      <div class="title">
+        <h4>POLY</h4>
+        <h5>당신의 원하는 모습으로
+          <br>공간에 따라 다양하게 변신합니다</h5>
+        <h6>협업 공간에 따라 다양한 활용이 가능한 의자</h6>
+          <div class="product_link">
+            <a href="#!">
+            <p>폴리 제품보기</p>
+            <nav><img src="images/icon/icon_arr_blue.png" alt="화살표"></nav>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- product_card -->
+</div> <!-- cardWrap -->
+
+<div class="contact_patra">
+  <img src="images/bg/bg_contact_help.jpg" alt="파트라대리점안내">
 </div>
 
-<div class="promotion_package">
-  <div class="promotion_body">
-    <img src="images/package01.jpg" alt="패키지1">
-    <div class="promotion_title">
-      <h4>[IN ROOM DINING] J - BASKET</h4>
-      <p>객실에서 즐기는 둘만의 인룸 나이트 피크닉! <br>
-        풍부한 향이 매력적인 그랜드 조선 수제 맥주 J 라거와 바삭한 수제 치킨</p>
-        <div class="package_link"><a href="#">PROMOTION</a></div>
-    </div>
-  </div>
-  <div class="promotion_body">
-    <img src="images/package02.jpg" alt="패키지2">
-    <div class="promotion_title">
-      <h4>[PEAK.] PICK! YOUR CANTAIL</h4>
-      <p>취향대로 Pick!<br>
-        루프탑 바 피크포인트에서 만나는 시원한 캔테일</p>
-        <div class="package_link"><a href="#">PROMOTION</a></div>
-    </div>
-  </div>
-</div> <!-- promotion_package -->
+<div class="top">TOP</div>
 
 <footer id="footer">
-  <div class="line"></div>
-  <div id="footer_top" class="clearfix">
-    <h1 class="logo"><a href="#">LOGO</a></h1>
-    <nav class="gnb">
-      <ul class="clearfix">
-        <li class="familysite"><a href="#">FAMILY SITE</a>
-          <ul class="sitemenu">
-            <li><a href="#">신세계그룹 인사이드</a></li>
-            <li><a href="#">SSG.COM</a></li>
-            <li><a href="#">신세계 TV쇼핑</a></li>
-            <li><a href="#">신세계 백화점</a></li>
-            <li><a href="#">이마트</a></li>
-            <li><a href="#">이마트 에브리데이</a></li>
-            <li><a href="#">이마트24</a></li>
-            <li><a href="#">까사미아</a></li>
-            <li><a href="#">신세계 인터내셔널</a></li>
-            <li><a href="#">신세계 푸드</a></li>
-            <li><a href="#">신세계 건설</a></li>
-            <li><a href="#">신세계 I&C</a></li>
-            <li><a href="#">스타벅스커피코리아</a></li>
-            <li><a href="#">신세계 면세점</a></li>
-            <li><a href="#">신세계 사이먼</a></li>
-            <li><a href="#">신세계 L&B</a></li>
-            <li><a href="#">신세계 프라퍼티</a></li>
-            <li><a href="#">신세계 센트럴시티</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-    </div>
-  </div>
-  <div id="footer_menu">
-    <ul class="clearfix">
-      <li><a href="#">고객센터</a></li>
-      <li><a href="#">이용약관</a></li>
-      <li><a href="#">이메일무단수집금지</a></li>
-      <li><a href="#">영상정보처리기기운영·관리방침</a></li>
-      <li><a href="#">개인정보처리방침</a></li>
-      <li><a href="#">호텔정책</a></li>
-    </ul>
-  </div>
+  <div class="footerWrap">
+    <div class="footer_top clearfix">
+      <h1 class="logo"><a href="#">LOGO</a></h1>
 
-  <div class="footer_bottom">
-    <p>서울시 중구 소공로 106</p>
-    <p>대표이사 한채양</p>
-    <p>T.064-738-6600</p>
-    <p>통신판매신고번호 중구 0623호</p>
-    <p>Copyright © 2020 JOSUN HOTELS & RESORTS Co. All rights reserved.</p>
-  </div>
+      <div class="fnb">
+        <ul class="clearfix">
+          <li><a href="#!" class="ft-main-co">의자생활연구소 Patra</a></li>
+          <li><a href="#!">개인정보취급방침</a></li>
+          <li><a href="#!">회원이용약관</a></li>
+          <li><a href="#!">사이트맵</a></li>
+          <li class="snsWrap">
+            <a href="#!"><img src="images/icon/sns_white.png" alt="sns"></a>
+          </li>
+        </ul>
+      </div> <!-- fnb -->
+    </div> <!-- footer_top -->
+
+    <div class="footer_bottom">
+      <div class="address">
+        <p>상호명 : ㈜파트라주소 : 경기도 용인시 처인구 남사면 완장천로 118-22 (주)파트라사업자등록번호 : 134-86-01816통신판매번호 : 2019-용인처인-0798</p>
+        <p>A/S번호 : 1899-2609대리점문의: 02-499-2152광고 및 제휴문의 : 02-499-2152팩스번호 : 02-499-2154개인정보 관리 및 보호 책임자 : (주)파트라대표이사 : 한상국 [사업자정보확인]</p>
+        <p>파트라몰의 모든 저작물의 저작권은 ㈜파트라에 있으며 무단복제나 도용은 저작권법에 의해 금지되어 있습니다.</p>
+        <p>고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한 PG 사의 구매안전서비스를 이용하실 수 있습니다. (서비스가입사실확인)</p>
+        <p>파트라몰의 모든 저작물의 저작권은 ㈜파트라에 있으며 무단복제나 도용은 저작권법에 의해 금지되어 있습니다.</p>
+      </div>
+    </div> <!-- footer_bottom -->
+  </div> <!-- footerWrap -->
 
 </footer>
 
