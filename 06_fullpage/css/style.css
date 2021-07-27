@@ -1,0 +1,55 @@
+@charset 'UTF-8';
+
+html, body {font-family: 'Montserrat', sans-serif;}
+.logo {
+    background-image:url(../images/icon/netmarble2.png);
+    background-position:166px 0;
+    width: 166px; height: 30px;
+    text-indent:9999px;
+}
+.section{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#myVideo {
+    position: absolute;bottom: 0;top: 0;right: 0;
+    width: 100%;height: 100%;background-size: 100% 100%;
+    background-color: black;background-position: center center;
+    object-fit: cover;z-index: 3;
+    }
+.section.page2{background-image: url(../images/bg1.jpg);}
+.section.page3{background-image: url(../images/bg2.jpg);}
+.section.page4{background-image: url(../images/bg3.jpg);}
+#navTop{
+    position: fixed;z-index:1;background: #fff;
+    width: 100%;
+}
+.navbar li{transition:0.3s;border-bottom: 5px solid transparent;}
+.navbar li.active{border-bottom: 5px solid #000;}
+#fp-nav.right{right:10px;}
+.fp-tooltip.right{right:20px}
+
+.txt1st{
+    opacity:0;transition:0.7s;transform:translateY(-300px);
+    position:absolute;z-index: 1;
+}
+.txt1st.end{opacity:1;transform:translateY(0)}
+.scroll{
+    position: absolute;bottom: 30px;left:50%;transform:translateX(-50%);
+    animation-name:xScroll;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    }
+
+@keyframes xScroll {
+    from{bottom:30px;}
+    to{bottom: 50px;}
+}
+
+@media screen and (max-width:1000px){
+    .navbar li.active{border-bottom: 5px solid transparent;}
+    .txt1st{text-align: center;}
+
+}

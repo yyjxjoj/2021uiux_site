@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fullpage</title>
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- js -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-md-2">
+        <a class="navbar-brand logo" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav topMenu ml-auto">
+            <li class="nav-item"  data-menuanchor="m1st">
+              <a class="nav-link" href="#m1st">월드</a>
+            </li>
+            <li class="nav-item" data-menuanchor="m2st">
+              <a class="nav-link" href="#m2st">킹덤</a>
+            </li>
+            <li class="nav-item" data-menuanchor="m3st">
+              <a class="nav-link" href="#m3st">세계관</a>
+            </li>
+            <li class="nav-item" data-menuanchor="m4st">
+                <a class="nav-link" href="#m4st">캐릭터</a>
+              </li>
+           
+          </ul>
+        </div>
+      </nav>
+    <div id="fullpage">
+        <div class="section page1" data-anchor="m1st">
+            <div class="container">
+                <video id="myVideo" autoplay muted data-autoplay>
+                    <source src="./images/bg.mp4">
+                 </video>
+                <div class="txt1st">
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <a href="#" class="btn btn-primary">DOWNLOAD</a>
+                </div>
+            </div>
+            <div class="scroll">
+                <a href="#m2st"><img src="images/icon/btn_scroll.png" alt=""></a>
+            </div>
+        </div>
+        <div class="section page2" data-anchor="m2st">
+            <div class="container">
+                <div class="txt1st">
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <a href="#" class="btn btn-primary">다운로드</a>
+                </div>
+            </div>
+            <div class="scroll">
+                <a href="#m3st"><img src="images/icon/btn_scroll.png" alt=""></a>
+            </div>
+        </div>
+        <div class="section page3" data-anchor="m3st">
+            <div class="container">
+                <div class="txt1st">
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <a href="#" class="btn btn-primary">다운로드</a>
+                </div>
+            </div>
+            <div class="scroll">
+                <a href="#m4st"><img src="images/icon/btn_scroll.png" alt=""></a>
+            </div>
+        </div>
+        <div class="section page4" data-anchor="m4st">
+            <div class="container">
+                <div class="txt1st">
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <a href="#" class="btn btn-primary">다운로드</a>
+                </div>
+            </div>
+        </div>
+        <div class="section page5 fp-auto-height py-5 bg-dark text-white" data-anchor="m5st">
+            <div class="container text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At, impedit?
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+</html>
